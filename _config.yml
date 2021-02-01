@@ -1,4 +1,4 @@
-title: Leaf Blog
+title: Snowjam's AI Blog
 iconURL: assets/default-icon.png
 theme: jekyll-theme-leaf
 
@@ -6,7 +6,7 @@ theme: jekyll-theme-leaf
 permalink: :slug
 
 social:
-  twitter: _SupunKavinda
+  email: snowjam02@gmail.com
   github: SupunKavinda
 
 baseurl: "" 
