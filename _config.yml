@@ -9,6 +9,8 @@ social:
   twitter: _SupunKavinda
   github: SupunKavinda
 
+baseurl: "" 
+url: "https://snowjamai.github.io/" 
 plugins:
  - jekyll-feed
  - jekyll-seo-tag
