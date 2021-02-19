@@ -1,5 +1,5 @@
 ---
-title: "설명서"
+title: "About"
 excerpt: "Page not found. Your pixels are in another canvas."
 sitemap: true
 permalink: /about/
