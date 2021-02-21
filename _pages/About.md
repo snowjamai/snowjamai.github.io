@@ -5,4 +5,4 @@ sitemap: true
 permalink: /about/
 ---
 
-연습하는중
+안녕하세요 개발자 설재민이라고합니다.
