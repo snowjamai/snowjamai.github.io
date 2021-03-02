@@ -91,6 +91,13 @@ analytics:
     tracking_id          :
     anonymize_ip         : # true, false (default)
 
+# Math Equation
+markdown: kramdown
+highlighter: rouge
+lsi: false
+excerpt_separator: "\n\n"
+incremental: false
+
 
 # Site Author
 author:
