@@ -60,8 +60,8 @@ $ \overline{bel(x_{t})} = P(x_{t}|z_{1:t},u_{1:t}) $
 
 ### 7. Bayes Filter Algorithm
 ```python
-$Algorithm Bayes_filter(bel(x_{t-1}), u_{t}, z_{t}):$
+Algorithm Bayes_filter(bel($x_{t-1}$), u_{t}, z_{t}):
     for all x_{t} do
-      $ \overline{bel(x_{t})} = \int P(x_{t}|u_{t},x_{t-1}) \cdot bel(x_{t-1}) dx_{t-1} $
+      \overline{bel(x_{t})} = $\int$ P(x_{t}|u_{t},x_{t-1}) $\cdot$ bel(x_{t-1}) dx_{t-1}
 
 ```
