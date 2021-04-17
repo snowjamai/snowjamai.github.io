@@ -14,23 +14,24 @@ comments: true
 ---
 
 ***
-### 1. 진화 알고리즘과 유전 알고리즘 개념
-1. 진화 알고리즘(__evolutionary algorithm__) 
-    진화의 원리에 따라 문제를 해결하는 meta heuristic optimization algorithm
-    - 무작위로 선택한 개체 중 가장 우수한 개체를 찾는 알고리즘
-    - fitness function(적합도 함수)를 통해 어떤 개체가 더 우수한지 판단
-
-    선택된 우수한 개체를 recombination(재결합) 과 mutation(변이)를 거쳐 다음 generation을 생성
-2. 유전 알고리즘(__Genetic Algorithm__)
+### 1. State Estimation 정의
+상태 예측이라는 말로 state란 주변 환경(동적인 객체, 정적인 객체)에 따른 상태를 의미
+- 센서 데이터를 받아 직접 관측 불가능한 물리량을 추론
+- 센서로는 추정의 일부만 가능 (sensor fusion에 의한 정확도 향상 - lidar + radar)
+- 센서 관측값에 대해서는 noise 존재
     
 
-### 2. 진화 알고리즘 개념
-1. 한국어 위키 백과에 대한 raw data 다운
+### 2. Localization
+대표적인 확률을 이용한 state estimation 기법으로서 확률론을 통한 state estimation의 불확실성을 해소
+- beilief distribution을 계산하여 확률적 계산 진행
+- Bayes Filte를 사하여 localization 진행
 ```bash 
 git pull origin master
 bash preprocess.sh dump-raw-wiki
 ```
-### 3. 비트 패턴 생성하는 방법
+### 3. Conditional Probability
+$ P(x|y) = \frac{P(x,y)}{P(y)} $
+
 임베딩을 위해서는 말뭉치(학습 데이터)가 필요
 1. 직접 말뭉치를 만들기
 2. 웹 문서에 대한 스크래핑(scraping)
