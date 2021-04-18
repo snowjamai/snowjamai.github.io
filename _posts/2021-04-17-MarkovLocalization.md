@@ -59,9 +59,14 @@ $ bel(x_{t}) = P(x_{t}|z_{1:t},u_{1:t}) $
 $ \overline{bel(x_{t})} = P(x_{t}|z_{1:t},u_{1:t}) $
 
 ### 7. Bayes Filter Algorithm
-```python
-Algorithm Bayes_filter(bel($x_{t-1}$), u_{t}, z_{t}):
-    for all x_{t} do
-      \overline{bel(x_{t})} = $ \int $ P(x_{t}|u_{t},x_{t-1}) $ \cdot $ bel(x_{t-1}) dx_{t-1}
+1. 특징
+    1. 확률 기반의 recursive filter
+    2. 이전 상태와 제어값을 이용하여 현재 state를 예측
+    3. Bayes rule을 이용한 센서 입력값을 현재 state에 update
 
-```
+2. 방법
+    1. 물리 모델을 이용한 Prediction 
+       - 물리적 특성(속도)을 이용한 현재 상태에 대한 추정
+    2. 센서값을 이용한 예측
+        - 센서(GPS)를 이용한 현재 위치 추정
+
