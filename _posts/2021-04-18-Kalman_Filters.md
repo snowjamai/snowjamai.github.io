@@ -25,7 +25,7 @@ comments: true
 - Bayes Filte를 사하여 localization 진행
 
 ### 3. Conditional Probability
-1. $ P(x|y) = \frac{P(x,y)}{P(y)} $
+1. $$ P(x|y) = \frac{P(x,y)}{P(y)} $$
 2. 만약 x와 y가 독립일 경우 $ P(x|y) = P(x)
 
 
